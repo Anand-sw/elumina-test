@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+.row {
+    margin: 0;
+}
+
+.main_title h4 {
+    font-size: 22px;
+    color: #212f3c;
+    padding: 12px 12px 0 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.drag-container {
+    width: 100%;
+    height: 74vh;
+    padding: 20px;
+    border: 2px solid #738292;
+    margin: 56px auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.drop-container {
+    width: 100%;
+    height: 74vh;
+    padding: 20px;
+    border: 2px solid #a3a1a1;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.drop-container h5, .drag-container h5 {
+    color: #34495e;
+}
+
+.drag_area {
+    padding-top: 20px;
+}
+.control_btn {
+    width: 50%;
+    padding: 12px;
+}
+.draggable {
+    padding: 10px;
+    margin: 5px;
+    color: #ffffff;
+    background: #3990ad;
+    border: 1px solid #a3a1a1;
+    cursor: grab;
+    font-weight: 600;
+    font-size: 16px; 
+    text-align: center;   
+}
+.drop-container {
+    width: 100%;
+    padding: 15px;
+    border: 2px dashed #aaa;
+    background-color: #f9f9f9;
+}
+
+#drop-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.dropped-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #0000001a;
+    width: 100%;
+}
+
+input, select {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+
+.delete-btn {
+    background-color: #bd2323;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.delete-btn:hover {
+    background-color: #8b0000;
+}
+
+.btn_sec {
+    text-align: end;
+} 
+.popup-error {
+    text-align: center;
+    padding: 12px;
+}
+.popup-error span {
+    color: #d31515;    
+}

@@ -1,0 +1,28 @@
+<div class="row">    
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+      <div class="btn_sec">
+        <button (click)="previewForm()" data-bs-toggle="modal" data-bs-target="#previewModal" 
+            class="btn btn-success" [disabled]="!fieldForm">Preview</button>
+      </div>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="drop-container" (dragover)="DropHere($event)" (drop)="onDrop($event)">
+        <h5>Drag and drop the controls from left to right to create form</h5>      
+        <div id="drop-area">
+          <ng-container *ngFor="let field of fields.controls; let i = index">
+            <div class="dropped-item">
+              <input *ngIf="field.value.type === 'input'" type="text"
+                [value]="field.value.label" readonly />
+              <input *ngIf="field.value.type === 'select'" type="text"
+                [value]="field.value.label" readonly />
+              <button class="delete-btn" (click)="removeElement(i, field.value.type)">X</button>
+            </div>
+          </ng-container>
+        </div>
+      </div>   
+</div>
+  
+<app-preview></app-preview>
